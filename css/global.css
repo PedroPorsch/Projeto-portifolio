@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+a, li, ul{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.sub-titulo{
+    font-size: 7rem;
+    word-break: break-all;
+
+}
+
+img{
+    max-width: 100%;
+}

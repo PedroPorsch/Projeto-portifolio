@@ -1,0 +1,133 @@
+.experiencia{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    padding: 40px 20px;
+    margin: 0 auto;
+
+}
+
+.experiencia h2{
+    color: #e0e0e0;
+    text-transform: uppercase;
+}
+
+.experiencia-itens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.experiencia-lista{
+    display: flex;
+    gap: 20px;
+    padding-inline-start: 0px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+
+}
+
+.experiencia-lista li{
+    background-color: white;
+    border-radius: 4px;
+    flex-grow: 0;
+    height: fit-content;
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    background: #ffffff;
+}
+
+
+
+.experiencia-texto{
+    font-size: 1.5rem;
+    max-width: 50ch;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    color: #525252;
+}
+
+.experiencia-texto span{
+    color: #141414;
+}
+
+.experiencia-titulo{
+    font-size: 1.125rem;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.detalhe::before{
+    content: '';
+    display: block;
+    height: 20px;
+    width: 4px;
+    position: absolute;
+    background: linear-gradient(#b6f929, #67dd0a);
+    top: 0px;
+    left: -4px;
+}
+
+.experiencia-data{
+    position: absolute;
+    left: -40px;
+    top: 20px;
+    font-size: .8rem;
+
+}
+
+.experiencia-descricao{
+    margin-left: 20px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #525252;
+}
+
+@media(max-width:800px){
+    .experiencia-texto{
+        font-size: 1rem;
+    }
+    .experiencia h2{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width:700px){
+    .experiencia{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .experiencia h2{
+        font-size: 2.5rem;
+        color: #141414;
+    }
+    .experiencia-texto{
+        font-size: 1.5rem;
+        max-width: 70ch;
+        margin-bottom: 50px;
+    }
+    .experiencia-data{
+        display: none;
+
+    }
+}
+
+@media(max-width:400px){
+    .experiencia-itens{
+        grid-template-columns: 1fr;
+    }
+    .experiencia-titulo:nth-child(odd){
+        order:1; 
+    }
+    .experiencia-lista{
+        order: 2;
+    }
+
+}
