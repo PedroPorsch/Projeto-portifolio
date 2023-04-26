@@ -1,12 +1,21 @@
 .experiencia{
     max-width: 1200px;
-    display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
     padding: 40px 20px;
     margin: 0 auto;
+    display: grid;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
 
 }
+
+.experiencia.ativo{
+    opacity: 1;
+    visibility: visible;
+}
+
 
 
 

@@ -2,6 +2,15 @@
     background-color: #000;
     position: relative;
     padding-top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
+
+}
+
+.footer.ativo{
+    opacity: 1;
+    visibility: visible;
 }
 
 .footer-container{

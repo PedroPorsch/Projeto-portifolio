@@ -1,6 +1,14 @@
 .formacao{
     background-color: #141414;
     color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    visibility: hidden;
+}
+
+.formacao.ativo{
+    opacity: 1;
+    visibility: visible;
 }
 
 .formacao-container{
